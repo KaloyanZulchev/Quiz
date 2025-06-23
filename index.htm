@@ -958,25 +958,25 @@ var IncorrectIndicator = '&#x2718;';
 var YourScoreIs = 'Your score is ';
 
 //New for 6.2.2.0
-var CompletedSoFar = 'Questions completed so far: ';
-var ExerciseCompleted = 'You have completed the exercise.';
+var CompletedSoFar = 'Ejercicios cumplidos: ';
+var ExerciseCompleted = 'Has cumplido el ejercicio';
 var ShowCompletedSoFar = true;
 
 var ContinuousScoring = true;
-var CorrectFirstTime = 'Questions answered correctly first time: ';
+var CorrectFirstTime = 'Respuestas correctas del primer intento: ';
 var ShowCorrectFirstTime = true;
 var ShuffleQs = false;
 var ShuffleAs = false;
-var DefaultRight = 'Correct!';
-var DefaultWrong = 'Sorry! Try again.';
+var DefaultRight = 'Puntos ganados';
+var DefaultWrong = 'No es correcto. Vuelve a intentarlo.';
 var QsToShow = 5;
 var Score = 0;
 var Finished = false;
 var Qs = null;
 var QArray = new Array();
 var ShowingAllQuestions = false;
-var ShowAllQuestionsCaption = 'Show all questions';
-var ShowOneByOneCaption = 'Show questions one by one';
+var ShowAllQuestionsCaption = 'Muestra todas las respuestas';
+var ShowOneByOneCaption = 'Muestra las preguntas una por una';
 var State = new Array();
 var Feedback = '';
 var TimeOver = false;
@@ -1563,27 +1563,6 @@ function CheckFinished(){
 
 <body onload="StartUp()" id="TheBody" >
 
-<!-- BeginTopNavButtons -->
-
-
-<div class="NavButtonBar" id="TopNavBar">
-
-
-
-
-<button class="NavButton" onclick="location='contents.htm'; return false;"> Index </button>
-
-
-
-<button class="NavButton" onclick="location='nextpage.htm'; return false;">=&gt;</button>
-
-
-</div>
-
-
-
-<!-- EndTopNavButtons -->
-
 <div class="Titles">
 	<h2 class="ExerciseTitle"></h2>
 
@@ -1638,27 +1617,6 @@ function CheckFinished(){
 <div class="FeedbackText" id="FeedbackContent"></div>
 <button id="FeedbackOKButton" class="FuncButton" onclick="HideFeedback(); return false;">&#160;OK&#160;</button>
 </div>
-
-<!-- BeginBottomNavButtons -->
-
-
-<div class="NavButtonBar" id="BottomNavBar">
-
-
-
-
-<button class="NavButton" onclick="location='contents.htm'; return false;"> Index </button>
-
-
-
-<button class="NavButton" onclick="location='nextpage.htm'; return false;">=&gt;</button>
-
-
-</div>
-
-
-
-<!-- EndBottomNavButtons -->
 
 <!-- BeginSubmissionForm -->
 
